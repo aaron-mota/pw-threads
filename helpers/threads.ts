@@ -1,18 +1,6 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Thread } from "../types";
 
-// export const getAllThreads = async () => {
-//   try {
-//     const keys = await AsyncStorage.getAllKeys();
-//     const result = await AsyncStorage.multiGet(keys);
-
-//     // @ts-expect-error (filtering out nulls may be needed ?)
-//     return result.map((req) => JSON.parse(req[1])).filter(Boolean);
-//   } catch (e) {
-//     console.log("ERROR (getAllThreads): ", e);
-//   }
-// };
-
 export const getAllThreads = async () => {
   try {
     const keys = await AsyncStorage.getAllKeys();
